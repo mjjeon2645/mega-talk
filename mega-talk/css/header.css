@@ -1,0 +1,17 @@
+h1, nav {
+    display: inline-block;
+} 
+
+ur li p {
+    display: inline-block;
+}
+
+#top-nav {
+    display: flex;
+}
+
+#top-nav img {
+    align-items: center;
+    width: 30px;
+    margin: .2rem;
+}
