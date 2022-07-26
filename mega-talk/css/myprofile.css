@@ -1,0 +1,19 @@
+#my-profile {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px rgb(223, 223, 223) solid;
+    padding-bottom: .6rem;
+}
+
+#my-profile p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+}
+
+#my-profile img {
+    height: 5rem;
+    border-radius: 35%;
+    overflow: hidden;
+}
