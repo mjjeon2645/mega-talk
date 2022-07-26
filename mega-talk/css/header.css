@@ -1,17 +1,19 @@
-h1, nav {
-    display: inline-block;
-} 
-
-ur li p {
-    display: inline-block;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#top-nav {
-    display: flex;
+h1, #top-nav {
+    display: inline-block;
+    margin: 1rem;
+} 
+
+h1 {
+    font-weight: normal;
 }
 
 #top-nav img {
-    align-items: center;
-    width: 30px;
-    margin: .2rem;
+    height: 1.5rem;
+    margin: .5rem;
 }
