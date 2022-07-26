@@ -1,0 +1,17 @@
+#friends li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#friends img {
+    height: 4rem;
+    border-radius: 40%;
+    overflow: hidden;
+}
+
+#friends p {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.2em;
+}
