@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-time {
+#mobile time {
     display: inline-block;
     font-size: 1.3rem;
     font-weight: bolder;

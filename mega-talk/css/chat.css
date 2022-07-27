@@ -1,0 +1,140 @@
+* {
+    word-break: keep-all;
+}
+
+main {
+    min-height: 100vh;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-color: rgb(174,192,206);
+}
+
+#chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+#chat-header h1 {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#chat-header img {
+    height: 1.6rem;
+    margin-left: 1rem;
+}
+
+#chat-nav {
+    display:inline-block
+}
+
+.avatar {
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 3.5vw;
+    background-position: 0 0;
+}
+
+.avatar {
+    background: url(../images/avatar.png) no-repeat 0 50%;
+    background-size: contain;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.message {
+    background-color: #FFF;
+    border-radius: 3vw;
+    font-size: 4vw;
+    font-weight: 400;
+    padding: 2vw;
+}
+
+/* .message::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    content: "";
+    left: -1vw;
+    width: 2vw;
+    height: 2vw;
+    border-top: 2vw solid #FFF;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 2vw solid transparent;
+} */
+
+.name {
+    font-weight: 400;
+    color: #666;
+    font-size: 3.5vw;
+    margin-bottom: 1.2vw;
+}
+
+#chat-content li {
+    display: flex;
+    padding: 3vw 2vw;
+}
+
+#chat-content li time {
+    font-size: 3vw;
+    width: 30vw;
+    align-self: flex-end;
+    color: #666;
+}
+
+.each-chat {
+    margin: 0 1.5vw 0 3vw;
+}
+
+#chat-field img {
+    height: 2rem;
+}
+
+#reply {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vw 2.5vw 5vw;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.plus {
+    width: 5vw;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5vw;
+    padding: 1.5vw;
+    width: 91%;
+    border: 1px solid #C5C4C4;
+    border-radius: 2.5vw;
+    background-color: #F9F8F8;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.enter-emoji {
+    display: inline-block;
+}

@@ -17,15 +17,15 @@
 }
 
 .content p:nth-child(2) {
-    display: inline-block;
-    font-size: 1em;
     color: rgb(153, 153, 153);
-    width: 18rem;
-    margin-right: 1.5rem;
-    word-break: keep-all;
+    font-size: 3.2vw;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;
     overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #chat-lists time {
@@ -38,8 +38,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+    padding-right: .9rem;
+    width: 67%;
 }
 
-time {
-    justify-self: end;
+.content time {
+    text-align: right;
 }
