@@ -6,8 +6,13 @@
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/mobile.css">
         <link rel="stylesheet" href="/css/chat.css">
+        <link rel="stylesheet" href="/css/mediaquery.css">
     </head>
     <body>
+        <div class="no-mobile">
+            <div class="logo">메가 톡</div>
+            <p>스크린 크기를 줄여주세요</p>
+        </div>
         <div id="mobile">
             <time>9:00</time>
             <div>
@@ -18,7 +23,7 @@
         </div>
         <header id="chat-header">
             <a href="chats.html"><img src="/images/chevron-left-black.png"></a>
-            <h2>앨리스</h2>
+            <h1>앨리스</h1>
             <nav id="chat-nav">
                 <a href="/chat.html"><img src="/images/search.png"></a>
                 <a href="/chat.html"><img src="/images/hamburger.png"></a>
@@ -26,31 +31,42 @@
         </header>
         <main>
             <article id="chat-content">
-                <div class="each-chat">
-                    <img src="/images/avatar.png">
-                    <div class="text">
-                        <p>앨리스</p>
-                        <p>말풍선</p>
-                    </div>
-                    <time>오전 5:01</time>
-                </div>
-                <div class="each-chat">
-                    <img src="/images/avatar.png">
-                    <div class="text">
-                        <p>앨리스</p>
-                        <p>말풍선</p>
-                    </div>
-                    <time>오전 5:01</time>
-                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <span class="avatar">프로필 이미지</span>
+                        </div>
+                        <div class="each-chat">
+                            <h2 class="name">앨리스</h2>
+                            <p class="message">
+                                오늘도 미라클 모닝 체크인 해야지? 오늘도 미라클 모닝 체크인 해야지?
+                                오늘도 미라클 모닝!
+                            </p>
+                        </div>
+                        <time>오전 5:01</time>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="avatar">프로필 이미지</span>
+                        </div>
+                        <div class="each-chat">
+                            <h2 class="name">앨리스</h2>
+                            <p class="message">
+                                언제 일어났니?
+                            </p>
+                        </div>
+                        <time>오전 5:01</time>
+                    </li>
+                </ul>
             </article>
         </main>
-        <form id="chat-field">
-            <img src="/images/plus.png">
-            <input type="text">
-            <div class="enter-emoji">
-                <img src="/images/emoji.png">
-                <img src="/images/enter.png">
-            </div>
-        </form>
+        <section id="reply">
+            <img class="plus" src="/images/plus.png">
+            <form id="chat-field">
+                <input type="text" name="message">
+                <img class="emoji" src="/images/emoji.png">
+                <img class="send" src="/images/enter.png">
+            </form>
+        </section>
     </body>
 </html>

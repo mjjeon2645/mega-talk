@@ -1,0 +1,32 @@
+.no-mobile {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .no-mobile {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        background-color: rgb(255, 223, 35);
+    }
+
+    .no-mobile .logo {
+        margin-bottom: 1em;
+        background: url("../images/logo.png") no-repeat 0 50%;
+        background-size: contain;
+        width: 7em;
+        height: 7em;
+        text-indent: -1000px;
+        overflow: hidden;
+    }
+
+    .no-mobile p {
+        font-size: 1.3em;
+        color: rgb(16, 117, 98);
+    }
+}
